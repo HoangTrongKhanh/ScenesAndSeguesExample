@@ -9,6 +9,8 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var txtData: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +19,18 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func unwindToMainViewController(unwindSegue: UIStoryboardSegue) {
-        
+        if unwindSegue.identifier == "Scene1ToMain" {
+            let scene1VC = unwindSegue.source as! Scene1ViewController
+            print("Data from Scene1: \(scene1VC.txtData?.text ?? "")")
+        }
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Main2Scene1" {
+//            let scene1VC = segue.destination as! Scene1ViewController
+//            scene1VC.textFromMainVC = txtData?.text ?? ""
+            DataPassing.shared.textToPassing = txtData?.text ?? ""
+        }
+    }
+    
+    
 }

@@ -13,6 +13,8 @@
 		188935F4207F3E4A003CAB9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188935F2207F3E4A003CAB9B /* LaunchScreen.storyboard */; };
 		188935FC207F3EF7003CAB9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188935FB207F3EF7003CAB9B /* MainViewController.swift */; };
 		188935FE207F4348003CAB9B /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188935FD207F4348003CAB9B /* CustomSegue.swift */; };
+		18F69DD5207F8E39001E323B /* Scene1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F69DD4207F8E39001E323B /* Scene1ViewController.swift */; };
+		18F69DD7207F90B7001E323B /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F69DD6207F90B7001E323B /* DataPassing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		188935F5207F3E4A003CAB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188935FB207F3EF7003CAB9B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		188935FD207F4348003CAB9B /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		18F69DD4207F8E39001E323B /* Scene1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1ViewController.swift; sourceTree = "<group>"; };
+		18F69DD6207F90B7001E323B /* DataPassing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				188935F5207F3E4A003CAB9B /* Info.plist */,
 				188935FB207F3EF7003CAB9B /* MainViewController.swift */,
 				188935FD207F4348003CAB9B /* CustomSegue.swift */,
+				18F69DD4207F8E39001E323B /* Scene1ViewController.swift */,
+				18F69DD6207F90B7001E323B /* DataPassing.swift */,
 			);
 			path = ScenesAndSeguesExample;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				188935EA207F3E49003CAB9B /* AppDelegate.swift in Sources */,
 				188935FE207F4348003CAB9B /* CustomSegue.swift in Sources */,
 				188935FC207F3EF7003CAB9B /* MainViewController.swift in Sources */,
+				18F69DD5207F8E39001E323B /* Scene1ViewController.swift in Sources */,
+				18F69DD7207F90B7001E323B /* DataPassing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

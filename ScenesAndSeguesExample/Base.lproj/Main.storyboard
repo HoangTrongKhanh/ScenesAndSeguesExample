@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JtB-fq-6yl">
-                                <rect key="frame" x="136" y="195" width="111.5" height="198.5"/>
+                                <rect key="frame" x="136" y="175" width="111.5" height="238.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Scene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7P-pS-3Sc">
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="26.5"/>
@@ -27,19 +27,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-CN-nS9">
+                                        <rect key="frame" x="0.0" y="36.5" width="111.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVl-wv-HyM">
-                                        <rect key="frame" x="0.0" y="36.5" width="111.5" height="33"/>
+                                        <rect key="frame" x="0.0" y="76.5" width="111.5" height="33"/>
                                         <color key="backgroundColor" red="1" green="0.61455272689999996" blue="0.54780198430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Go to scene 1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="yNA-xQ-TZl" kind="show" id="Tbt-pF-yfZ"/>
+                                            <segue destination="yNA-xQ-TZl" kind="show" identifier="Main2Scene1" id="Tbt-pF-yfZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CU-S7-wUG">
-                                        <rect key="frame" x="0.0" y="79.5" width="111.5" height="33"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="111.5" height="33"/>
                                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Go to scene 2">
@@ -50,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFP-3x-0Oo">
-                                        <rect key="frame" x="0.0" y="122.5" width="111.5" height="33"/>
+                                        <rect key="frame" x="0.0" y="162.5" width="111.5" height="33"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Go to scene 3">
@@ -61,7 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWD-v2-8C0">
-                                        <rect key="frame" x="0.0" y="165.5" width="111.5" height="33"/>
+                                        <rect key="frame" x="0.0" y="205.5" width="111.5" height="33"/>
                                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Go to scene 4">
@@ -81,21 +87,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtData" destination="8cB-CN-nS9" id="0ml-SC-JLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Scene1 View Controller-->
         <scene sceneID="heu-e6-Bj5">
             <objects>
-                <viewController id="yNA-xQ-TZl" sceneMemberID="viewController">
+                <viewController id="yNA-xQ-TZl" customClass="Scene1ViewController" customModule="ScenesAndSeguesExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Of-VY-nas">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ISP-LK-7da">
-                                <rect key="frame" x="150" y="310.5" width="75" height="66.5"/>
+                                <rect key="frame" x="150" y="290.5" width="75" height="106.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2Z-by-HHG">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="26.5"/>
@@ -103,14 +112,20 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTv-xr-fm1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hck-qT-tSf">
                                         <rect key="frame" x="0.0" y="36.5" width="75" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTv-xr-fm1">
+                                        <rect key="frame" x="0.0" y="76.5" width="75" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ky8-Kk-oas" kind="unwind" unwindAction="unwindToMainViewControllerWithUnwindSegue:" id="oTG-FJ-cMH"/>
+                                            <segue destination="ky8-Kk-oas" kind="unwind" identifier="Scene1ToMain" unwindAction="unwindToMainViewControllerWithUnwindSegue:" id="oTG-FJ-cMH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -123,6 +138,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wOu-F0-TJ6"/>
                     </view>
+                    <connections>
+                        <outlet property="lblData" destination="L2Z-by-HHG" id="VHa-SY-33N"/>
+                        <outlet property="txtData" destination="Hck-qT-tSf" id="DXg-tv-aI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWw-r9-CSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ky8-Kk-oas" userLabel="Exit" sceneMemberID="exit"/>
